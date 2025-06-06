@@ -1,0 +1,181 @@
+/* TreatmentMethods.css */
+.treatment-methods {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.treatment-methods .header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.treatment-methods .back-button {
+  background: none;
+  border: none;
+  padding: 5px;
+  color: #4EBDD1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.treatment-methods .title {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.treatment-methods .pms-info-button {
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.treatment-methods .content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  padding-bottom: 120px; /* Increased padding to prevent footer overlap */
+}
+
+.treatment-methods .instruction-message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  background-color: #FFF8E1;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.treatment-methods .message-bubble {
+  flex-grow: 1;
+  margin-right: 15px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.treatment-methods .treatment-intro {
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.treatment-methods .treatments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.treatment-methods .treatment-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.treatment-methods .treatment-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.treatment-methods .treatment-card.selected {
+  border-color: #4EBDD1;
+  box-shadow: 0 0 0 2px #4EBDD1;
+}
+
+.treatment-methods .treatment-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.treatment-methods .treatment-name {
+  padding: 10px;
+  font-size: 0.8rem;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.treatment-methods .checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  margin-right: 5px;
+  text-align: center;
+  line-height: 16px;
+  font-size: 0.8rem;
+  color: transparent;
+}
+
+.treatment-methods .treatment-card.selected .checkbox {
+  background-color: #4EBDD1;
+  border-color: #4EBDD1;
+  color: white;
+}
+
+.treatment-methods .check-link {
+  display: block;
+  background-color: #f0f0f0;
+  color: #FF6B98;
+  border: none;
+  padding: 8px;
+  font-size: 0.7rem;
+  text-align: center;
+  text-decoration: underline;
+  width: 100%;
+  margin-top: auto;
+}
+
+.treatment-methods textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.treatment-methods .save-results-button {
+  background-color: #FF6B98;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.treatment-methods .save-results-button:hover {
+  background-color: #FF5183;
+}

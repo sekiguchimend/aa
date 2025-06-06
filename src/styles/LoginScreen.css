@@ -1,0 +1,132 @@
+/* LoginScreen.css */
+.login-screen {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-screen .header {
+  padding: 15px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+}
+
+.login-screen .back-button {
+  background: none;
+  border: none;
+  padding: 5px;
+}
+
+.login-screen .title {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.login-screen .content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+}
+
+.login-screen .mascot-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+  position: relative;
+}
+
+.login-screen .message-bubble {
+  background-color: #FFF8E1;
+  border: 2px solid #FFB74D;
+  border-radius: 20px;
+  padding: 15px;
+  position: relative;
+  margin-bottom: 15px;
+  min-width: 200px;
+  text-align: center;
+}
+
+.login-screen .message-bubble:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #FFB74D;
+}
+
+.login-screen .instruction-text {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.login-screen .signup-button {
+  background-color: #FF6B98;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.login-screen .signup-button:hover {
+  background-color: #FF5183;
+}
+
+.login-screen .login-button {
+  background-color: #4EBDD1;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.login-screen .login-button:hover {
+  background-color: #3AA7BB;
+}
+
+.login-screen .registration-section,
+.login-screen .login-section {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-screen .forgot-password {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-screen .forgot-password-link {
+  color: #FF6B98;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.login-screen .forgot-password-link:hover {
+  text-decoration: underline;
+}

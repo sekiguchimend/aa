@@ -1,0 +1,113 @@
+/* HomeScreen.css */
+.home-screen {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-screen .header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.home-screen .back-button {
+  background: none;
+  border: none;
+  padding: 5px;
+}
+
+.home-screen .title {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.home-screen .pms-info-button {
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-screen .content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  padding-bottom: 90px;
+}
+
+.home-screen .mascot-message {
+  display: flex;
+  align-items: flex-start;
+  background-color: #FFF8E1;
+  border: 2px solid #FFD180;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.home-screen .message-text {
+  flex-grow: 1;
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+.home-screen .add-period-link {
+  color: #4EBDD1;
+  text-decoration: underline;
+  display: block;
+  margin-top: 5px;
+}
+
+.home-screen .period-info {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.home-screen .info-box {
+  flex: 1;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.home-screen .pms-period {
+  background-color: #FFE0E9;
+}
+
+.home-screen .next-period {
+  background-color: #E0F7FA;
+}
+
+.home-screen .info-box h3 {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.home-screen .info-box p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.home-screen .cycle-graph-container {
+  margin-bottom: 30px;
+}
+
+.home-screen .graph-title {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: normal;
+}

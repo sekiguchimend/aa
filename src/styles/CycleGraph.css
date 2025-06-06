@@ -1,0 +1,185 @@
+/* CycleGraph.css */
+.cycle-graph {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cycle-graph .dates {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  max-width: 320px;
+  margin: 0 auto 10px;
+}
+
+.cycle-graph .graph-container {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.cycle-graph .circle-graph {
+  width: 250px;
+  height: 250px;
+  margin: 35px auto 0;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cycle-graph .segment {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cycle-graph .pms-segment {
+  clip-path: polygon(50% 50%, 0 0, 40% 0, 50% 50%);
+  background-color: #FFC1E3;
+}
+
+.cycle-graph .period-segment {
+  clip-path: polygon(50% 50%, 40% 0, 100% 0, 100% 30%, 50% 50%);
+  background-color: #FFD6E7;
+}
+
+.cycle-graph .post-period-segment {
+  clip-path: polygon(50% 50%, 100% 30%, 100% 100%, 75% 100%, 50% 50%);
+  background-color: #FFE6F2;
+}
+
+.cycle-graph .ovulation-segment {
+  clip-path: polygon(50% 50%, 75% 100%, 0 100%, 0 0, 50% 50%);
+  background-color: #4EBDD1;
+}
+
+/* 外側ラベルのスタイル */
+.cycle-graph .segment-labels {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.cycle-graph .label-item {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+.cycle-graph .label-line {
+  width: 30px;
+  height: 1px;
+  background-color: #666;
+}
+
+.cycle-graph .label-text {
+  background-color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid #ddd;
+  margin-left: 5px;
+  white-space: nowrap;
+}
+
+/* 各ラベルの位置 */
+.cycle-graph .pms-label {
+  top: 15%;
+  left: 5%;
+}
+
+.cycle-graph .period-label {
+  top: 15%;
+  right: 5%;
+  flex-direction: row-reverse;
+}
+
+.cycle-graph .period-label .label-text {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.cycle-graph .post-period-label {
+  bottom: 15%;
+  right: 5%;
+  flex-direction: row-reverse;
+}
+
+.cycle-graph .post-period-label .label-text {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.cycle-graph .ovulation-label {
+  bottom: 15%;
+  left: 5%;
+}
+
+.cycle-graph .inner-circle {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  position: absolute;
+}
+
+.cycle-graph .current-phase {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #FF6B98;
+}
+
+.cycle-graph .date-markers {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.cycle-graph .date-marker {
+  background-color: white;
+  padding: 6px 10px;
+  border-radius: 12px;
+  border: 1px solid #4EBDD1;
+  color: #4EBDD1;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 60px;
+}
+
+.cycle-graph .marker-date {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cycle-graph .marker-label {
+  font-size: 0.7rem;
+  color: #666;
+  font-weight: 400;
+}
