@@ -33,7 +33,7 @@ const LoginScreen = ({ onLogin }: LoginScreenProps) => {
         <img 
           width={60}
           height={60}
-          src={"/src/public/image.png"} alt="logo" className="logo" />
+          src={"./image.png"} alt="logo" className="logo" />
       </div>
 
       <div className="content">
